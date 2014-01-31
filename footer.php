@@ -162,7 +162,6 @@ $responsive_options = responsive_get_options();
 	        Background Image by <a href="http://www.backgroundlabs.com" title="Background Labs"><img src="<?php echo $filepath ?>/images/backgroundlabs88x15.gif" border="0" alt="Background Labs"/></a>
 		</div>
 		<!-- end .powered -->
-<?php echo $filepath ?>
 	</div>
 	<!-- end #footer-wrapper -->
 
