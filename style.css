@@ -1,0 +1,86 @@
+/*
+ Theme Name:     Responsive EO Child Theme
+ Theme URI:      http://www.ericolsonconsulting.com
+ Description:    Responsive EO Child Theme
+ Author:         Eric Olson Consulting LLC
+ Author URI:     http://www.ericolsonconsulting.com
+ Template:       responsive
+ Version:        1.0.0
+*/
+ 
+@import url("../responsive/style.css");
+ 
+/* =Theme customization starts here
+------------------------------------------------------- */
+#logo .Eric{
+position: relative;
+height: 100px;
+width: 300px;
+top: 0px;
+left: 0px;
+}
+.Eric .vert_bar{
+top: 0px;
+left: 0px;
+width: 12px;
+height: 100px;
+background: #000000;
+position: absolute;
+}
+.Eric .top_horiz_bar{
+top: 0px;
+left: 0px;
+width: 80px;
+height: 12px;
+background: #000000;
+position: absolute;
+}
+.Eric .bottom_horiz_bar{
+width: 80px;
+height: 12px;
+background: #000000;
+position: absolute;
+top: 88px;
+left: 0px;
+}
+.Eric .middle_horiz_bar{
+width: 80px;
+height: 10px;
+background: #000000;
+position: absolute;
+top: 45px;
+left: 0px;
+}
+.Eric .outer_circle{
+top: 0px;
+left: 40px;
+position: absolute;
+height: 100px;
+width: 100px;
+background: #efefef;
+-moz-border-radius: 50px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+}
+.Eric .inner_circle{
+position: absolute;
+top: 10px;
+left: 50px;
+height: 80px;
+width: 80px;
+background: #000000;
+-moz-border-radius: 50px;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+}
+.Eric .logo_text{
+position: absolute;
+top: 40px;
+left: 145px;
+font-family: Arial;
+font-variant: small-caps;
+/*font-size: xx-large;*/
+font-size: 31.5px;
+font-weight: 700;
+color: #000000;
+}
