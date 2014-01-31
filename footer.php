@@ -10,12 +10,12 @@ if( !defined( 'ABSPATH' ) ) {
  *
  *
  * @file           footer.php
- * @package        Responsive
- * @author         Emil Uzelac
- * @copyright      2003 - 2013 ThemeID
+ * @package        responsive-eo
+ * @author         Eric Olson
+ * @copyright      2014 Eric Olson Consulting LLC
  * @license        license.txt
  * @version        Release: 1.2
- * @filesource     wp-content/themes/responsive/footer.php
+ * @filesource     wp-content/themes/responsive-eo/footer.php
  * @link           http://codex.wordpress.org/Theme_Development#Footer_.28footer.php.29
  * @since          available since Release 1.0
  */
@@ -31,6 +31,8 @@ $responsive_options = responsive_get_options();
 <?php responsive_wrapper_end(); // after wrapper hook ?>
 </div><!-- end of #container -->
 <?php responsive_container_end(); // after container hook ?>
+
+<?php $filepath = get_stylesheet_directory_uri();?>
 
 <div id="footer" class="clearfix">
 	<?php responsive_footer_top(); ?>
@@ -157,11 +159,10 @@ $responsive_options = responsive_get_options();
 				Responsive Theme</a>
 			<?php esc_attr_e( 'powered by', 'responsive' ); ?> <a href="<?php echo esc_url( 'http://wordpress.org/' ); ?>" title="<?php esc_attr_e( 'WordPress', 'responsive' ); ?>">
 				WordPress</a><br>
-	        Background Image by <a href="http://www.backgroundlabs.com" title="Background Labs"><img src="http://www.ericolsonconsulting.com/wp-content/uploads/2012/12/backgroundlabs88x15.gif" border="0" alt="Background Labs"/></a>
-
+	        Background Image by <a href="http://www.backgroundlabs.com" title="Background Labs"><img src="<?php echo $filepath ?>/images/backgroundlabs88x15.gif" border="0" alt="Background Labs"/></a>
 		</div>
 		<!-- end .powered -->
-
+<?php echo $filepath ?>
 	</div>
 	<!-- end #footer-wrapper -->
 
